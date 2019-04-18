@@ -3,7 +3,8 @@ import {
   View,
   Text,
   Image,
-  FlatList
+  FlatList,
+  StyleSheet
 } from "react-native";
 
 export default class HomeScreen extends React.Component {
@@ -75,11 +76,11 @@ export default class HomeScreen extends React.Component {
       <View style={{ flex: 1, backgroundColor: '#FFF' }}>
 
         <View>
-          <Image style={{
+          {/* <Image style={{
             height: 80,
             width: '100%'
           }}
-            source={require('./Image/wcnr.png.png')} />
+            source={require('.')} /> */}
         </View>
         <View style={{ marginTop: 10, left: 10 }}>
           <Text style={{ fontWeight: '400', fontSize: 18, color: '#7fb7ea' }}>
@@ -132,7 +133,7 @@ export default class HomeScreen extends React.Component {
         </View>
 
         <View style={{ left: 10, top: 10, flexDirection: 'row' }}>
-          <Image source={require('../Image/filter.png.png')} />
+          {/* <Image source={require('../Image/filter.png.png')} /> */}
           <Text style={{ color: '#808080' }}>
             FILTER:
           </Text>
@@ -149,3 +150,5 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff"
   },
 });
+
+export default HomeScreen;
